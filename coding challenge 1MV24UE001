@@ -1,0 +1,54 @@
+PRIME NUMBERS
+def PrimeNo(n):
+    for num in range(2, n):
+        is_prime = True
+        for i in range(2, num):
+            if num % i == 0:
+                is_prime = False
+                break
+        if is_prime:
+            print(num, end=' ')
+
+PrimeNo(4)
+
+STAR TRIANGLE
+  def star_triangle(n):
+    for i in range(n+1):
+        stars = i * 2 -1
+        whitespace = n - i
+        print(" "whitespace + ""*stars)
+
+print(star_triangle(4
+
+
+
+FIBONACCI SERIES
+  n = int(input("Enter the number :"))
+a = 0
+b = 1
+count = 0
+
+while count < n:
+    print(a, end=' ')
+    c = a + b
+    a = b
+    b = c
+    count = count + 1
+
+
+
+  VOWELS AND CONSONENT
+  def Count(text):
+    stripped_text = ''.join(text.split())
+    final_text = stripped_text.lower()
+    vowel_counter = 0
+    cons_counter = 0
+    for ch in final_text:
+        if ch in 'aeiou':
+            vowel_counter += 1
+        elif ch.isalpha():
+            cons_counter += 1
+    print("Vowels:", vowel_counter)
+    print("Consonont: ",cons_counter)
+
+Count("Hello, World!")
